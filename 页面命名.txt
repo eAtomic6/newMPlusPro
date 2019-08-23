@@ -1,0 +1,64 @@
+﻿pages:
+    --taskList                    今日任务列表               xn
+    --calculator                  计算器		            xn
+    --barCode                     扫码                      xn
+    --customerRecord              客户报备                   xn
+    --guide                       引导页                    xn
+    --home                        首页                      xn
+    --house                       项目                      xn
+    --houseDetails                项目详情                   xn
+    --index                       入口页                     xn
+    --search                      搜索页                     xn
+    --tipFollow                   跟进管理                   xn
+    --mine                        我的                      cw
+    --personalData                个人资料                   cw
+    --outCompany                  退出该企业                 cw
+    --about                       关于我们                   cw
+    --batch                       批量操作                   cw
+    --organization                组织机构                   cw
+    --message                     消息                       cw
+    --messageDetail               消息详情                   cw
+    --staffDetail                 员工详情                   cw
+    --staffList                   员工信息编辑                cw
+    --invite                      邀请                       cw
+    --appDownload                 app下载                    cw
+    --sectorSet                   部门设置                   cw
+    --selectSatrap                选择主管                   cw
+    --addCus                      添加客户                   lwz
+    --intentProject		          意向项目		             lwz
+    --customerInfoOwn             私客详情                   lsx
+    --customerInfoCom             公客详情                   lsx
+    --customerInfoComplete        完成详情                   lsx
+    --customerInfo                客户详情                   lsx
+    --customerInfoList            报备列表                   lsx
+    --customerFollowUp            客户跟进                   lsx
+    --customerRob                 抢入客户                   lsx
+    --customerReported            客户报备                   lsx
+    --customerWidthSee            客户带看                   lsx
+    --serviceLog		          服务记录		             hy
+    --login                       登录                       hy
+    --addStaff                    手动添加员工                cw
+    --moveDepart                  选择部门                    cw
+    --addSector                   添加部门                    cw
+    --teamReport                  团队报表                    lwz
+    --dealList                    成交列表                    cw
+    --commissionList              佣金列表                    cw
+    --customerHeir                选择客户交接人               cw
+
+
+
+
+components:
+    --topbar                      公共头部                      xn
+    --building                    项目列表                      xn
+    --dropdown                    tab下拉                       xn
+    --followList                  跟进列表                      xn
+    --recordList                  报备、带看列表                 xn
+    --radioBox                    单选                          lwz
+    --popupPick                   弹窗选择                      lwz
+    --clientList                  客户列表                      lwz
+    --memberList                  员工列表                      cw
+    --customerComponent           客户组件                       lsx
+    --abnormal                    空数据&网络异常                 lwz
+    --dealRecord                  成交记录组件                   cw
+

@@ -1,0 +1,22 @@
+.clearfix:after {
+  content: " ";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.clearfix {
+  display: inline-block;
+}
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+ /deep/ .vux-dialog-enter-active {
+  animation: 0s;
+}
+ /deep/ .vux-dialog-leave-active {
+  animation: 0s;
+}

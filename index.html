@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <!--<script type="text/javascript" src="./static/flexible.js"></script>-->
+  <title>me</title>
+  <script type="text/javascript" src="https://api.map.baidu.com/api?v=2.0&ak=iEfvHCO9inBQfGSxVHYFIEa1I7IgEgDk"></script>
+  <script type="text/javascript" src="http://res2.wx.qq.com/open/js/jweixin-1.4.0.js"></script>
+  <script type="text/javascript" src="./static/md5.js"></script>
+  <script src="./static/socket.io.js"></script>
+
+</head>
+
+<body>
+  <div id="app"></div>
+</body>
+
+</html>
+<script type="text/javascript">
+  document.addEventListener("plusready", function () {
+    var webview = plus.webview.currentWebview();
+    var first = null;
+    plus.key.addEventListener("backbutton", function () {
+      var _router = window.location.href.split('#')[1]
+      // console.log(_router+'   '+first)
+      webview.canBack(function (e) {
+        var homeRouter = ['/home', '/user', '/house', '/mine']
+        if (homeRouter.includes(_router) || _router.indexOf('/login') > -1) {
+          if (!first) {
+            first = new Date().getTime();
+            plus.nativeUI.toast("再按一次退出")
+            // webview.back();
+            setTimeout(function () {
+              first = null;
+            }, 1000);
+          } else {
+            if (new Date().getTime() - first < 1000) {
+              webview.close();
+            }
+          }
+        } else {
+          webview.back()
+        }
+      })
+    })
+  })
+
+</script>
